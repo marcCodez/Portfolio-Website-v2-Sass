@@ -145,4 +145,85 @@ img {
 			}
 		}
 	}
+
+	// Home Section C
+	&-c {
+		.process {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 1.5rem;
+			text-align: center;
+
+			// process-icon
+			&-icon {
+				border-radius: 50%;
+				background: $dark-color;
+				color: set-text-color($dark-color);
+				padding: 2rem;
+				width: 4.375rem;
+				height: 4.375rem;
+				line-height: 4.375rem;
+				text-align: center;
+				position: relative;
+				transition: all 1s;
+
+				&:hover {
+					background: $main-color;
+					width: 5.625rem;
+					height: 5.625rem;
+					line-height: 5.625rem;
+
+					.process-step {
+						background: $dark-color;
+						color: set-text-color($dark-color);
+					}
+				}
+			}
+
+			// process-step
+			&-step {
+				position: absolute;
+				top: 0;
+				right: 0;
+				font-size: 1.75rem;
+				background: $main-color;
+				color: set-text-color($main-color);
+				border-radius: 50%;
+				height: 0.9375rem;
+				width: 0.9375rem;
+				line-height: 0.9375rem;
+				padding: 1rem;
+				transition: all 1s;
+			}
+		}
+	}
+}
+
+// Footer
+#main-footer {
+	background: $dark-color;
+	color: #fff;
+	height: 5rem;
+
+	.footer-content {
+		display: flex;
+		justify-content: space-between;
+		height: 5rem;
+		align-items: center;
+	}
+
+	.social .fab {
+		margin-right: 1rem;
+		border: 0.125rem #fff solid;
+		border-radius: 50%;
+		height: 1.25rem;
+		width: 1.25rem;
+		line-height: 1.25rem;
+		text-align: center;
+		padding: 0.5rem;
+
+		&:hover {
+			background: $main-color;
+		}
+	}
 }
