@@ -248,6 +248,44 @@ img {
   color: #ffbc00;
   margin: 1rem; }
 
+#about-b .progress {
+  overflow: hidden;
+  height: 1.25rem;
+  background: #ccc;
+  border-radius: 0.3125rem;
+  margin-bottom: 0.6rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: #ffbc00; }
+
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem; }
+  #about-c .about-logos img {
+    width: 70%; }
+
+#about-d .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem; }
+  #about-d .testimonials ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center; }
+  #about-d .testimonials p {
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    padding: 0.5rem; }
+  #about-d .testimonials img {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    margin-right: 0.5rem; }
+
 #main-footer {
   background: #333;
   color: #fff;
